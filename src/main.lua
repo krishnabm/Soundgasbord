@@ -1,6 +1,7 @@
-local WinModule = require("window.WindowModule")
-local HelloWorldScene = require("scenes.HelloWorld-scene.HelloWorldScene")
+-- Load AmuletTk in _G
+require("window.WindowModule")
 
-local window = WinModule.win
+local win = AmuletTk.WindowModule.win;
+local KeyboardScene = require("scenes.Keyboard-scene.KeyboardScene")
 
-window.scene:append(HelloWorldScene)
+win.scene:append(KeyboardScene)

@@ -1,15 +1,16 @@
-local WindowModule = {}
+_G.AmuletTk = {};
+AmuletTk.WindowModule = {}
+AmuletTk.isTouchEnv = am.platform == "ios" or am.platform == "android"
 
-WindowModule.win = am.window {
-  title = "Hello",
-  width = 800,
-  height = 600,
-  clear_color = vec4(0.5, 0, 0.5, 1),
+AmuletTk.WindowModule.win = am.window {
+  title = "Soundgasboard",
+  width = 720,
+  height = 1600,
+  clear_color = vec4(0.1, 0.1, 0.1, 1),
   borderless = false,
   resizable = true,
-  msaa_samples = 2, -- low antialiasing
+  msaa_samples = 0, -- low antialiasing
   highdpi = false
 }
-WindowModule.win.scene = am.group()
+AmuletTk.WindowModule.win.scene = am.group()
 
-return WindowModule
