@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RunAmulet",
+      "detail": "Run Amulet",
+      "type": "shell",
+      "command": "amulet /src/main.lua",
+      "windows": {
+        "command": "amulet .\\src\\main.lua"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Export",
+      "detail": "Default target: Windows",
+      "type": "shell",
+      "command": "amulet export -windows -r -a -o builds/mygame.zip src",
+      "windows": {
+        "command": "amulet export -windows -r -a -o builds\\mygame.zip src"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
