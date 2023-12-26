@@ -19,9 +19,23 @@
       "label": "Export",
       "detail": "Default target: Windows",
       "type": "shell",
-      "command": "amulet export -windows -r -a -o builds/mygame.zip src",
+      "command": "amulet export -windows -r -a -o builds/soundgasbord-win.zip src",
       "windows": {
-        "command": "amulet export -windows -r -a -o builds\\mygame.zip src"
+        "command": "amulet export -windows -r -a -o builds\\soundgasbord-win.zip src"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Export - Android",
+      "detail": "Target: Android",
+      "type": "shell",
+      "command": "amulet export -android-studio-proj -r -a -o builds/soundgasbord-android.zip src",
+      "windows": {
+        "command": "amulet export -android-studio-proj -r -a -o builds\\soundgasbord-android.zip src"
       },
       "group": "build",
       "presentation": {
