@@ -1,6 +1,13 @@
 _G.AmuletTk = {};
 AmuletTk.WindowModule = {}
 AmuletTk.isTouchEnv = am.platform == "ios" or am.platform == "android"
+AmuletTk.store = {}
+AmuletTk.store.enableGlissando = false;
+AmuletTk.store.enableLoop = false;
+math.randomseed(os.time())
+-- AmuletTk.store.noteCode = math.random(100000, 999999) * 100 + math.random(0,9);
+AmuletTk.store.noteCode = 55581500;
+print("Note code -> " .. AmuletTk.store.noteCode)
 
 AmuletTk.WindowModule.win = am.window {
   title = "Soundgasboard",
