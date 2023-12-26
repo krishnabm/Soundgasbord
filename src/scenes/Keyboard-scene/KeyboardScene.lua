@@ -1,7 +1,7 @@
 local win = AmuletTk.WindowModule.win
 local isTouchEnv = AmuletTk.isTouchEnv
-local libTouchClick = require("../../lib.TouchClick")
-local libIOHelpers = require("../../lib.IOHelpers")
+local libTouchClick = require("lib.TouchClick")
+local libIOHelpers = require("lib.IOHelpers")
 
 local keysGroup = am.group()
 for i = 0, 11 do

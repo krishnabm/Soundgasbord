@@ -1,7 +1,7 @@
 local win = AmuletTk.WindowModule.win
 local isTouchEnv = AmuletTk.isTouchEnv
-local libTouchClick = require("../../lib.TouchClick")
-local libIOHelpers = require("../../lib.IOHelpers")
+local libTouchClick = require("lib.TouchClick")
+local libIOHelpers = require("lib.IOHelpers")
 local store = AmuletTk.store
 
 local titleNode = am.translate(0, 300)
@@ -38,7 +38,7 @@ local loopSettingNode = am.translate(-100, -100)
                 local y1 = -110
                 local x2 = -130
                 local y2 = -75
-                
+
                 if newClick and libIOHelpers.fireInHitBox(pos,vec2(x1,y1), vec2(x2,y2))  then
                     store.enableLoop = not store.enableLoop;
                     scene.hidden = not scene.hidden;
